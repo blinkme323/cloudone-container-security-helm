@@ -1,9 +1,11 @@
-cloudOne:
-    apiKey: 2Fx8rqYLpgAmaHYEopaPSbioxFJ
-    endpoint: https://container.de-1.cloudone.trendmicro.com
+cloudOne: 
+    apiKey: 2WoLdoG64vjwaq55KF8cJWBqnHW
+    endpoint: https://container.us-1.cloudone.trendmicro.com
+    exclusion: 
+        namespace: [kube-system]
     runtimeSecurity:
         enabled: true
     vulnerabilityScanning:
         enabled: true
-    exclusion:
-        namespaces: [ kube-system ]
+    inventoryCollection:
+        enabled: true
